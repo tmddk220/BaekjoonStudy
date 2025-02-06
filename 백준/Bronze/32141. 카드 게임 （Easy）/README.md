@@ -36,3 +36,10 @@
 
 <p>만약 모든 카드를 사용해도 죽일 수 없다면 <mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mn>1</mn></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$-1$</span></mjx-container>을 출력하여라.</p>
 
+### 아이디어
+
+<p>두 번째 줄에서 입력받는 리스트 cards는 오름차순으로 받아지기 때문에 그저 반복문을 돌며 card의 합(total_damage)과 체력 h의 값을 비교하면 된다.</p>
+
+<p>당연히 total_damage의 값이 갱신될 때마다 구하고자 하는 값(count)의 값도 1씩 더해 갱신해준다.</p>
+
+<p>total_damage >= h일 때, count를 출력하면 되고, 만약 cards 순회를 마쳤음에도 h의 값보다 total_damage의 값이 작다면 예외처리로 -1을 출력해주어야 한다.</p>
